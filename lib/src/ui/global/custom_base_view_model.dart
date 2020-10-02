@@ -23,7 +23,7 @@ abstract class CustomBaseViewModel extends BaseViewModel {
   //     locator<CloudStorageService>();
   // final PushNotificationService pushNotificationService =
   //     locator<PushNotificationService>();
-  // final AnalyticsService analyticsService = locator<AnalyticsService>();
+  final AnalyticsService analyticsService = locator<AnalyticsService>();
   // final DynamicLinkService dynamicLinkService = locator<DynamicLinkService>();
   // final RemoteConfigService remoteConfigService =
   //     locator<RemoteConfigService>();

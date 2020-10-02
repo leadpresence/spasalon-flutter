@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:stacked/stacked.dart';
 
 class LoginView extends StatelessWidget {
+  LoginView({Key key}) : super(key: key);
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
 

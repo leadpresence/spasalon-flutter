@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BookingView extends StatefulWidget {
+  BookingView({Key key}) : super(key: key);
   @override
   _BookingViewState createState() => _BookingViewState();
 }

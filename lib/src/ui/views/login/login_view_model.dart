@@ -1,8 +1,9 @@
-import 'package:topshoplekki/src/ui/ui_imports.dart';
-// import 'package:compound/src/ui/global/custom_base_view_model.dart';
 import 'package:flutter/foundation.dart';
+import 'package:topshoplekki/src/ui/global/globals_imports.dart';
+import 'package:topshoplekki/src/ui/global/custom_base_view_model.dart';
+import 'package:topshoplekki/src/app/generated/router/router.gr.dart';
 
-class LoginViewModel extends BaseViewModel {
+class LoginViewModel extends CustomBaseViewModel {
   Future login({
     @required String email,
     @required password,
@@ -35,6 +36,6 @@ class LoginViewModel extends BaseViewModel {
   }
 
   Future navigateToSignupView() async {
-    await navigationService.pushNamedAndRemoveUntil(Routes.signUpView);
+    await navigationService.pushNamedAndRemoveUntil(Routes.signup);
   }
 }
