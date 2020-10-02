@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
-
 import 'package:topshoplekki/src/app/models/user_model.dart';
 import 'package:flutter/services.dart';
 import 'package:injectable/injectable.dart';
@@ -9,9 +8,9 @@ import 'package:injectable/injectable.dart';
 @lazySingleton
 class FirestoreService {
   final CollectionReference _usersCollectionReference =
-      Firestore.instance.collection('users');
+      FirebaseFirestore.instance.collection('users');
   final CollectionReference _postsCollectionReference =
-      Firestore.instance.collection('posts');
+      FirebaseFirestore.instance.collection('posts');
 
   // final StreamController _postsController =
   //     StreamController<List<Post>>.broadcast();
@@ -21,9 +20,9 @@ class FirestoreService {
   // List<List<Post>> _allPagedResults = List<List<Post>>();
   bool _hasMorePosts = true;
 
-  Future createUser(User user) async {
+  Future createUser(UserModel user) async {
     try {
-      await _usersCollectionReference.document(user.id).setData(
+      await _usersCollectionReference.doc(user.id).set(
             user.toJson(),
           );
     } catch (e) {
@@ -139,7 +138,7 @@ class FirestoreService {
   }
 
   Future deletePost(String documentId) async {
-    await _postsCollectionReference.document(documentId).delete();
+    await _postsCollectionReference.doc(documentId).delete();
   }
 
   // Future updatePost(Post post) async {

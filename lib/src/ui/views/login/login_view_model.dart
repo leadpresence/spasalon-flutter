@@ -1,7 +1,5 @@
 import 'package:topshoplekki/src/ui/ui_imports.dart';
-
-import 'package:compound/src/app/router/router.gr.dart';
-import 'package:compound/src/ui/global/custom_base_view_model.dart';
+// import 'package:compound/src/ui/global/custom_base_view_model.dart';
 import 'package:flutter/foundation.dart';
 
 class LoginViewModel extends BaseViewModel {

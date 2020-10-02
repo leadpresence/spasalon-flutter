@@ -1,4 +1,4 @@
-import 'package:topshoplekki/src/app/locator/locator.dart';
+import 'package:topshoplekki/src/app/generated/locator/locator.dart';
 import 'package:topshoplekki/src/app/models/user_model.dart';
 import 'package:topshoplekki/src/app/services/analytics_service.dart';
 import 'package:topshoplekki/src/app/services/firestore_service.dart';
