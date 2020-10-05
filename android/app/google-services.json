@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "149100218519",
+    "firebase_url": "https://topshopmobile-41ed7.firebaseio.com",
+    "project_id": "topshopmobile-41ed7",
+    "storage_bucket": "topshopmobile-41ed7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149100218519:android:6b4998dba8e53d748701d2",
+        "android_client_info": {
+          "package_name": "com.noblefelix.topshoplekki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149100218519-rn81nvm8b5bt8dcmk6eiqe9o6vt2rr98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.noblefelix.topshoplekki",
+            "certificate_hash": "c0906a0622825ccaaf2a63a3683c3ad57fb697f6"
+          }
+        },
+        {
+          "client_id": "149100218519-gdae61erhoqv9iuhe813ko8e7qt787a2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx8csPUGxOOmgSrE4yYH5Y2SzmXB_UQ4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149100218519-gdae61erhoqv9iuhe813ko8e7qt787a2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

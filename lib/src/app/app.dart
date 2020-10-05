@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:topshoplekki/src/app/generated/locator/locator.dart';
+import 'package:topshoplekki/src/app/generated/router/router.gr.dart';
+import 'package:topshoplekki/src/ui/global/custom_base_view_model.dart';
 
 class App extends StatelessWidget {
   @override
@@ -6,9 +9,9 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "topshoplekki",
-      // initialRoute: RouterGR.Routes.startupView,
-      // onGenerateRoute: RouterGR.Router().onGenerateRoute,
-      // navigatorKey: locator<NavigationService>().navigatorKey,
+      initialRoute: Routes.startupView,
+      onGenerateRoute: Router().onGenerateRoute,
+      navigatorKey: locator<NavigationService>().navigatorKey,
       theme: ThemeData(
           brightness: Brightness.light, primaryColor: Colors.amber[00]),
       darkTheme: ThemeData(

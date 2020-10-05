@@ -32,6 +32,7 @@ class Router extends RouterBase {
     RouteDef(Routes.startupView, page: StartupView),
     RouteDef(Routes.homeView, page: HomeView),
     RouteDef(Routes.signup, page: SignUpView),
+    RouteDef(Routes.login, page: LoginView),
     RouteDef(Routes.booking, page: LoginView),
   ];
   @override
